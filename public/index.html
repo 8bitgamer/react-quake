@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+
+    <title>React App</title>
+
+    <script src="%PUBLIC_URL%/scripts/p5/p5.min.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start`.
+      To create a production bundle, use `npm run build`.
+    -->
+  </body>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiOGJpdGdhbWVyIiwiYSI6ImNqMjIzaXMxbDAwMDQzM21rZWkyejlkdzAifQ.wyy0RmrDOxE1QhHIVbCZ9w';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/dark-v9'
+    });
+
+ 
+  </script>
+</html>
