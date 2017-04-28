@@ -8,9 +8,12 @@
     <title>React App</title>
 
     <script src="%PUBLIC_URL%/scripts/p5/p5.min.js"></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v0.36.0/mapbox-gl.css' rel='stylesheet' />
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root">
+    </div>
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -22,13 +25,5 @@
       To create a production bundle, use `npm run build`.
     -->
   </body>
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiOGJpdGdhbWVyIiwiYSI6ImNqMjIzaXMxbDAwMDQzM21rZWkyejlkdzAifQ.wyy0RmrDOxE1QhHIVbCZ9w';
-    var map = new mapboxgl.Map({
-      container: 'map',
-      style: 'mapbox://styles/mapbox/dark-v9'
-    });
-
- 
-  </script>
+  <script src="%PUBLIC_URL%/scripts/custom.js"></script>
 </html>
